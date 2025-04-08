@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Delicias Express</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="logo-nav">
+                <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" height="60">
+                <h1><a href="/" style="text-decoration: none; color: inherit;">Delicias Express</a></h1>  
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/quienes-somos">Quiénes Somos</a></li>
+                    <li><a href="/servicios">Servicios</a></li>
+                    <li><a href="/noticias">Noticias</a></li>
+                    <li><a href="/contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="contenedor">
+        <main>
+            <section>
+                {% block contenido %}{% endblock %}
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 Delicias Express | Todos los derechos reservados<br><center>Nombre: Wilson Chura Flores<br>C.I: 9889738<br>R.U: 200063709</center> </p></footer>
+    </div>
+</body>
+</html>

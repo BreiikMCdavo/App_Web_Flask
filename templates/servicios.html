@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block contenido %}
+<h2>Servicios</h2>
+<ul class="servicios-lista">
+    <li class="servicio-item">
+        <img src="{{ url_for('static', filename='img/hamburguesa.jpg') }}" width="100" class="imagen-servicio">
+        <span class="comentario-centro">Catering para eventos</span>
+    </li>
+    <li class="servicio-item">
+        <img src="{{ url_for('static', filename='img/pizza.jpg') }}" width="100" class="imagen-servicio">
+        <span class="comentario-centro">Pedidos a domicilio</span>
+    </li>
+    <li class="servicio-item">
+        <img src="{{ url_for('static', filename='img/postre.jpg') }}" width="100" class="imagen-servicio">
+        <span class="comentario-centro">Menús personalizados</span>
+    </li>
+</ul>
+<style>
+    .servicios-lista {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .servicio-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        justify-content: flex-start;
+    }
+
+    .imagen-servicio {
+        margin-right: 15px;
+    }
+
+    .comentario-centro {
+        margin-left: 0; /* Centra el comentario de "Menús personalizados" */
+        font-weight: bold;
+    }
+</style>
+{% endblock %}

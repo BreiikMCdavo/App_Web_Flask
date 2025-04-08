@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    padding: 20px;
+
+    max-width: 1400px;
+    margin: 40px auto; /* ← Esto agrega margen arriba y abajo */
+    
+}
+
+
+
+/* Encabezado */
+header {
+    background: tomato;
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Logo redondo */
+header img {
+    border-radius: 50%;
+    height: 50px; /* Un poco más pequeño para que no se vea tan grande */
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Contenido principal */
+main img {
+    border-radius: 8px;
+    margin: 10px 0;
+    max-width: 100%;      /* Para que no se pase del contenedor */
+    height: auto;         /* Mantiene proporción */
+    max-height: 400px;    /* Límite de altura */
+}
+
+/* Formulario */
+form input,
+form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Botón del formulario */
+button {
+    background: tomato;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Pie de página */
+footer {
+    margin-top: 20px;
+    color: #555;
+}
+/* 
+
+ */
+ 
+/* Footer bonito */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}

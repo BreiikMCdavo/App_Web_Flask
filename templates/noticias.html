@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block contenido %}
+<h2>Noticias</h2>
+<article>
+    <img src="{{ url_for('static', filename='img/promocion.jpg') }}" width="250">
+    <h3>¡Nueva promoción de combos familiares!</h3>
+    <p>Del 10 al 20 de abril, disfruta nuestros combos con descuento especial.</p>
+</article>
+{% endblock %}

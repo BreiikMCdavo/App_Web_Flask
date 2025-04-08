@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block contenido %}
+<h2>¡Bienvenido a Delicias Express!</h2>
+<p>Comida rápida, deliciosa y lista para ti. Ofrecemos catering, menús personalizados y servicio a domicilio.</p>
+<img src="{{ url_for('static', filename='img/local.png') }}" >
+<h3>Testimonios</h3>
+<blockquote>"Las hamburguesas son las mejores que he probado." - Ana M.</blockquote>
+<blockquote>"Rápido, sabroso y económico. ¡Recomendado!" - Carlos P.</blockquote>
+<div>
+    <button onclick="location.href='https://facebook.com'">Facebook</button>
+    <button onclick="location.href='https://instagram.com'">Instagram</button>
+</div>
+{% endblock %}
